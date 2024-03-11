@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/share?selection.family=Micro+5);
+@import url(https://fonts.google.com/specimen/Chakra+Petch?selection.family=Micro+5&query=chakra);
 :root {
     --cor-de-fundo:#995E06;
     --verde:#6FFF57; 
@@ -22,10 +22,48 @@ body {
     margin: 0 auto;
     }
 
-.titulo-principal { text-align: left;
+.titulo-principal { 
+    text-align: left;
     width: 100%;
     font-size: 32px;
     }
 
 .titulo-principal span {
-        color: var(--verde); }
+        color: var(--verde); 
+    }
+
+.botao {
+    
+    background-color: var(--botao-inativo);
+    color: var(--branco0);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: var(--botao-ativo);
+    border-top: none;
+}
+
+.botoes {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .botoes{
+        display: flex;
+    }
+
+}
+    
+.botao:first-child {
+    border-radius: 40px 0 0 0;
+}
+
+.botao:last-child {
+    border-radius: 40px 0 0 0;
+}
+
